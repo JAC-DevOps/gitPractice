@@ -12,4 +12,6 @@ function returnEvenNumbers (x){
 }
 returnEvenNumbers ()
 
+console.log('Hey class')
+
 console.log (returnEvenNumbers(evenNumbers))
