@@ -1,0 +1,46 @@
+<html>
+
+<body>
+    <p id="demo">CHANGING HERE</p>
+    <img id="demoIMG" src="https://miro.medium.com/max/8064/1*rVr4qSy5ZEG0AyJvqdPl_Q.jpeg" width="200px" alt="">
+    <span id='dateSpan'></span>
+
+    <h1 onclick="this.innerHTML = 'Ooops!' ">click on this</h1>
+    <h2 onclick=" changeText(this)     ">This is my second heading</h2>
+
+    <button onclick="showAlert()">click me</button>
+
+    <button onmouseover="this.innerHTML = 'thank you'">Mouse over me</button>
+    
+    <script>
+
+        function showAlert(){
+            alert('hey yal')
+        }
+
+        function changeText(id){
+            console.log(x)
+            x.innerHTML = "Hey check me out!!"
+        }
+
+        document.getElementById('demo').innerHTML = 'HAPPY FRIDAY CLASS'
+
+        let firstP = document.getElementById('demo')
+        firstP.innerHTML = 'HAPPY FRIDAY CLASS'
+        firstP.style.color = 'red'
+        firstP.style.fontSize = '20px'
+        firstP.style.fontFamily = 'verdana'
+
+        firstP.innerHTML = '<span> new span</span>'
+
+        const imageDemo= document.getElementById('demoIMG')
+        imageDemo.src = 'https://mediaops.com/wp-content/uploads/2020/03/MediaOps-white-01-1536x1265.png'
+        
+        document.getElementById('dateSpan').innerHTML = 'Today is =>' + Date() 
+        document.write('new writing here')
+
+
+    </script>
+</body>
+
+</html>
